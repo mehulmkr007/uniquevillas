@@ -1,0 +1,360 @@
+---
+import "./../app.css";
+
+const { number1, number2 } = Astro.props;
+---
+
+<section class="wrapper flex items-center justify-center w-full">
+  <div class="ml-3 mr-3">
+    <!-- navbar -->
+    <nav class="flex justify-between">
+      <h class="text-2xl font-bold p-1 hover:cursor-pointer"
+        ><a href="/">Garment</a></h
+      >
+
+      <ul class="flex gap-2 p-1 hover:cursor-pointer">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Property</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+
+      <ul class="flex gap-2 p-1 hover:cursor-pointer">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </nav>
+
+    <!-- hero content -->
+
+    <div class="mt-10">
+      <!-- section-1 -->
+      <div class="flex ml-4">
+        <div class="min-w-[70%]">
+          <div>
+            <h1 class="text-8xl">
+              <p class="">
+                <span class="">Find the</span>
+                <span>Most</span>
+              </p>
+              <span>Appropriate Residence</span>
+              <p>
+                For You To Live In <span class="text-6xl font-bold">^</span>
+              </p>
+            </h1>
+          </div>
+          <button class="button mt-3"> See Propertys </button>
+        </div>
+
+        <div class="flex items-center justify-center">
+          <div>
+            <div class="flex justify-start">
+              <span class="flex gap-2 justify-center items-center">
+                <img
+                  src=""
+                  alt="#img"
+                  height="50"
+                  width="50"
+                  class="rounded-full bg-slate-400"
+                />TOP TESTIMONIAL</span
+              >
+            </div>
+
+            <p class="font-semibold">
+              Incredible experience with an Garment! There expirtice and
+              dadication made....
+            </p>
+            <div class="font-bold"></div>
+          </div>
+        </div>
+      </div>
+      <!-- section-2 -->
+      <div class="flex justify-center mt-2 w-full">
+        <div class="flex justify-between items-center mt-3 max-w-[90%]">
+          <div class="flex gap-2">
+            <div>
+              <img
+                src=""
+                alt="#img"
+                height="50"
+                width="50"
+                class="rounded-full bg-slate-400"
+              />
+            </div>
+
+            <div>
+              <p>Best</p>
+              <p>Residence</p>
+            </div>
+          </div>
+
+          <div class="flex gap-2">
+            <div>
+              <img
+                src=""
+                alt="#img"
+                height="50"
+                width="50"
+                class="rounded-full bg-slate-400"
+              />
+            </div>
+
+            <div>
+              <p>Best</p>
+              <p>Residence</p>
+            </div>
+          </div>
+
+          <div class="flex gap-2">
+            <div>
+              <img
+                src=""
+                alt="#img"
+                height="50"
+                width="50"
+                class="rounded-full bg-slate-400"
+              />
+            </div>
+
+            <div>
+              <p>Best</p>
+              <p>Residence</p>
+            </div>
+          </div>
+
+          <div class="flex gap-2">
+            <div>
+              <img
+                src=""
+                alt="#img"
+                height="50"
+                width="50"
+                class="rounded-full bg-slate-400"
+              />
+            </div>
+
+            <div>
+              <p>Best</p>
+              <p>Residence</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-3 -->
+    <div class="mt-10 w-full relative border-[2px] border-black min-h-[15rem]">
+      <img src="image/home.jpg" alt="#img" />
+
+      <div
+        class="absolute bottom-[6rem] left-[10rem] w-[80%] flex justify-between"
+      >
+        <!-- left -->
+        <div class="">
+          <h1 class="text-7xl font-bold flex flex-col">
+            We Are Here <span>For You</span>
+          </h1>
+          <div class="text-3xl font-bold">TESTIMONIAL</div>
+        </div>
+        <!-- right -->
+        <div class="flex flex-col text-white gap-4">
+          <div class="flex justify-between">
+            <div class="flex flex-col">
+              <span class="text-4xl">
+                {number1}150+
+              </span>
+              <span class="text-xl"> Property Available </span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-4xl">
+                {number2}87+
+              </span>
+              <span class="text-xl"> Total Partners </span>
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-3 grid-rows-2 gap-2 p-2 border-[1px] rounded-3xl justify-center items-center"
+          >
+            <div
+              class="max-w-[max-content] text-white p-2 rounded-full bg-slate-400 bg-opacity-80 pl-1 pr-2"
+            >
+              Furniture
+            </div>
+            <div
+              class="max-w-[max-content] text-white p-2 rounded-full bg-slate-400 bg-opacity-80"
+            >
+              Home
+            </div>
+            <div
+              class="max-w-[max-content] text-white p-2 rounded-full bg-slate-400 bg-opacity-80"
+            >
+              Rent
+            </div>
+            <div
+              class="max-w-[max-content] text-white p-2 rounded-full bg-slate-400 bg-opacity-80"
+            >
+              100%
+            </div>
+            <div
+              class="max-w-[max-content] text-white p-2 rounded-full bg-slate-400 bg-opacity-80"
+            >
+              Brand
+            </div>
+            <div
+              class="max-w-[max-content] text-white p-2 rounded-full bg-slate-400 bg-opacity-80"
+            >
+              Trusted
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section - 4 -->
+    <div class="flex justify-center items-center mt-4">
+      <div class="w-[80%] flex justify-between items-center">
+        <div>
+          <h2 class="capitalize text-3xl">
+            find the most <br /> comfortable residence <br /> near You Now
+          </h2>
+          <div class="mt-4">
+            <button
+              class="capitalize rounded-md bg-[#cef37f] px-2 pb-1 mx-auto font-medium"
+              >nearest residence</button
+            >
+            <button
+              class="capitalize rounded-md border-black border-[1px] px-2 pb-1 mx-auto font-medium"
+              >view property</button
+            >
+          </div>
+        </div>
+
+        <img src="image/home.jpg" alt="Map image" width="400" height="200" />
+      </div>
+    </div>
+
+    <!-- section - 5 -->
+
+    <section class="w-full">
+      <div class="w-[90%]">
+        <div class="w-full mt-12">
+          <h1 class="capitalize text-4xl">
+            all the best residences <br /> from us for you
+          </h1>
+          <div class="flex justify-between mt-3">
+            <p>
+              We have developed a total of <!--{propertynumber}-->150+
+              properties
+            </p>
+            <button
+              class="border-[1.5px] border-black p-2 px-4 -mt-2 rounded-full"
+              >Let's see our property - <!--Icon using Astro-->
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section - -- FOOTER .. -->
+
+    <section class="w-full">
+      <div class="bg-[url('image/bg-1.jpg')] bg-cover py-[5rem] px-12">
+        <h1 class="text-[#616363] text-4xl capitalize">
+          Interested to Build your home?
+        </h1>
+        <h2
+          class="text-white mt-4 text-4xl underline decoration-1 underline-offset-[8.5px]"
+        >
+          <a href="#">contact@Wika.agency</a>
+        </h2>
+
+        <!-- Horizontal Ruler -->
+        <div class="w-[92%] h-[2px] my-12 bg-[#616363]"></div>
+
+        <div class="flex flex-row justify-between">
+          <!-- Left Section -->
+          <div>
+            <h2 class="text-white text-3xl font-medium">Garment</h2>
+            <p class="mt-2 text-sm text-[#d9d9d9]">
+              Hats off to Garment! Their professionalism <br />
+              and commitment shine through
+            </p>
+
+            <div class="text-white mt-12 space-y-3 text-sm">
+              <p><!--Icon--> Surabaya, Indonesia</p>
+              <p><!--Icon--> Phone: (+62) 4444-4444</p>
+            </div>
+          </div>
+          <!--End of Left Section-->
+
+          <!-- Right Section -->
+          <div class="flex gap-16">
+            <!-- Sub Column-1 -->
+            <div>
+              <h2 class="text-white font-medium mb-3">ABOUT</h2>
+              <p class="text-[#d9d9d9] text-sm mb-2">
+                <a href="#">Our Story</a>
+              </p>
+              <p class="text-[#d9d9d9] text-sm mb-2">
+                <a href="#">Our People</a>
+              </p>
+              <p class="text-[#d9d9d9] text-sm mb-2">
+                <a href="#">Contact Us</a>
+              </p>
+              <p class="text-[#d9d9d9] text-sm mb-2"><a href="#">FAQs</a></p>
+              <p class="text-[#d9d9d9] text-sm mb-2"><a href="#">Blog</a></p>
+            </div>
+
+            <!-- Sub Column-2 -->
+            <div>
+              <h2 class="text-white font-medium mb-3">SERVICES</h2>
+              <p class="text-[#d9d9d9] text-sm mb-2">
+                <a href="#">property</a>
+              </p>
+              <p class="text-[#d9d9d9] text-sm mb-2">
+                <a href="#">Home Development</a>
+              </p>
+              <p class="text-[#d9d9d9] text-sm mb-2">
+                <a href="#">Interior Design</a>
+              </p>
+              <p class="text-[#d9d9d9] text-sm mb-2">
+                <a href="#">Custom Furniture</a>
+              </p>
+            </div>
+
+            <!-- Sub Column-3 -->
+            <div>
+              <h2 class="text-white font-medium mb-3">EVENTS</h2>
+              <p class="text-[#d9d9d9] text-sm mb-2">
+                <a href="#">Property Art Gallery</a>
+              </p>
+              <p class="text-[#d9d9d9] text-sm mb-2">
+                <a href="#">Full Calender</a>
+              </p>
+            </div>
+
+            <!-- Sub Column-4 -->
+            <div>
+              <h2 class="text-white font-medium mb-3">RESOURCES</h2>
+              <p class="text-[#d9d9d9] text-sm mb-2">
+                <a href="#">Furniture</a>
+              </p>
+              <p class="text-[#d9d9d9] text-sm mb-2"><a href="#">Agents</a></p>
+              <p class="text-[#d9d9d9] text-sm mb-2"><a href="#">Career</a></p>
+              <p class="text-[#d9d9d9] text-sm mb-2">
+                <a href="#">Property Services</a>
+              </p>
+              <p class="text-[#d9d9d9] text-sm mb-2">
+                <a href="#">Latest News</a>
+              </p>
+            </div>
+          </div>
+          <!--End of Right Section-->
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
